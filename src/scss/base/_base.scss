@@ -3,6 +3,7 @@
 html, body {
     font-family: $Font;
     background-color: $Color-primary;
+    overflow-x: hidden;
 }
 
 * {

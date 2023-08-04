@@ -1,12 +1,9 @@
 /* abstracts */
-@use './abstracts/mixins';
-@use './abstracts/variables';
+@use './abstracts';
 
 /* base */
 @use './base/base';
 
 
 /* Components */
-@use './components/navbar';
-@use './components/preloader';
-@use './components/hero';
+@use './components';
