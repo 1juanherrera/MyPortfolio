@@ -1,0 +1,29 @@
+@use '../abstracts' as *;
+
+.nav {
+    width: 100vw;
+    height: 70px; 
+    
+    &__button {
+        height: 4rem;
+        width: 4rem;
+        position: fixed;
+        border-radius: 50%;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 3rem;
+        top: 3rem;
+        border: none;
+        color: $Color-primary;
+
+        @include responsive(tablet-portrait) {
+            width: 4rem;
+            height: 4rem;
+            font-size: 2rem;
+            right: 3rem;
+            top: 2rem;
+        }
+    }
+}

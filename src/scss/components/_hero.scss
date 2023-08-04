@@ -1,0 +1,114 @@
+@use '../abstracts' as *;
+
+.hero {
+    width: 100vw;
+    height: calc(100vh - 70px);
+    color: $White;
+    background-color: $Color-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__content {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+
+        &__greeting {
+            font-size: 1.4rem;
+            font-weight: 300;
+            color: $Color-tertiary;
+
+            @include responsive(phone) {
+                font-size: 1.2rem;
+            }
+        }
+
+        &__name {
+            font-size: 4.1rem;
+            font-weight: 700;
+            color: $White;
+
+            @include responsive(phone) {
+                font-size: 2.5rem;
+            }
+        }
+
+        &__headline {
+            font-size: 2.8rem;
+            color: $Color-tertiary;
+
+            @include responsive(phone) {
+                font-size: 1.5rem;
+            }
+        }
+
+        &__about {
+            font-size: 1.25rem;
+            font-weight: 300;
+            color: $Color-tertiary;
+            width: 40rem;
+
+            @include responsive(phone) {
+                width: 90%;
+                font-size: 1.2rem;
+            }
+        }
+
+        &__button {
+            margin-top: 30px;
+
+            @include responsive(phone) {
+                display: flex;
+            }
+            
+            &--1 {
+                background-color: $Accent;
+                border: none;
+                width: 15rem;
+                font-family: $Font;
+                color: $White;
+                height: 4.4rem;
+                border-radius: 5px;
+                margin-right: 20px;
+
+                @include responsive(tablet-portrait) {
+                    margin-bottom: 20px;
+                    height: 4.4rem;
+                    width: 13rem;
+                }
+
+                @include responsive(phone) {
+                    margin-bottom: 20px;
+                    height: 3.5rem;
+                    width: 9rem;
+                }
+            }
+
+            &--2 {
+                background-color: $Color-primary;
+                border: 1px solid white;
+                width: 15rem;
+                font-family: $Font;
+                color: $White;
+                height: 4.4rem;
+                border-radius: 5px;
+                margin: 0 auto;
+
+                @include responsive(tablet-portrait) {
+                    margin-bottom: 20px;
+                    height: 4.4rem;
+                    width: 13rem;
+                }
+
+                @include responsive(phone) {
+                    height: 3.5rem;
+                    width: 9rem;
+                }
+            }
+
+        }
+    }
+}
