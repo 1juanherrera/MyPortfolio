@@ -2,7 +2,6 @@
 
 .about {
     width: 100vw;
-    height: 80vh;
     background-color: $Color-secondary;
     display: flex;
     justify-content: center;
@@ -15,17 +14,27 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        margin: 5rem 0 5rem 0;
+
+        @include responsive(tablet-portrait) {
+            flex-direction: column-reverse;
+            height: initial;
+        }
 
         &__icons {
-            //border: 1px solid white;
             width: 45%;
             height: 70%;
             display: flex;
             flex-wrap: wrap;
             gap: 2rem;
 
+            @include responsive(tablet-portrait) {
+                margin-top: 2rem;
+                width: 80%;
+                gap: 1rem;
+            }
+
             &--icon {
-                
                 width: 5rem;
                 height: 6rem;
                 margin: 0 auto;
@@ -53,10 +62,18 @@
             width: 45%;
             height: 70%;
 
+            @include responsive(tablet-portrait) {
+                width: 100%;
+            }
+
             &--text {
                 color: $White;
-                font-size: 2.5rem;
+                font-size: 3rem;
                 font-weight: 700;
+
+                @include responsive(phone) {
+                    font-size: 2rem;
+                }
             }
 
             &--paragraph {
@@ -64,6 +81,10 @@
                 font-weight: 400;
                 color: $Color-tertiary;
                 margin-bottom: 1rem;
+
+                @include responsive(phone) {
+                    font-size: 1.2rem;
+                }
             }
 
             &--skill {
@@ -71,6 +92,10 @@
                 font-weight: 400;
                 color: $Color-tertiary;
                 margin-bottom: 1rem;
+
+                @include responsive(phone) {
+                    font-size: 1.2rem;
+                }
 
                 span {
                     background-color: $Color-tertiary;
