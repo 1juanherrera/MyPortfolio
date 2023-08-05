@@ -62,6 +62,7 @@
 
             @include responsive(phone) {
                 display: flex;
+                width: 100%;
             }
             
             &--1 {
