@@ -4,11 +4,11 @@ import { Navbar, Preloader, Hero, AboutMe, Projects } from "./components"
 const App = () => {
   return (
       <>
-        {/* <Preloader /> */}
+        <Preloader />
         <Navbar />
         <Hero />
         <AboutMe />
-        {/* <Projects /> */}
+        <Projects />
       </>
   )
 }
