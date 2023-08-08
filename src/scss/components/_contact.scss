@@ -1,0 +1,15 @@
+@use '../abstracts' as *;
+
+.contact {
+    width: 100vw;
+    height: 100vh;
+    background: $Color-secondary;
+    border: 1px solid white;
+
+    &__title {
+        color: $White;
+        font-size: 3rem;
+        text-align: center;
+        margin-top: 5rem;
+    }
+}

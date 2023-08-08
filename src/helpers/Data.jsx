@@ -77,7 +77,7 @@ export const portfolioImages = [
     {
         id: 1,
         img: work1,
-        name: 'Soup Recipes',
+        name: 'Saki',
         visit: 'link',
         github: 'github' 
     },
@@ -98,7 +98,7 @@ export const portfolioImages = [
     {
         id: 4,
         img: work4,
-        name: 'Weather App',
+        name: 'Magical Things',
         visit: 'link',
         github: 'github' 
     }

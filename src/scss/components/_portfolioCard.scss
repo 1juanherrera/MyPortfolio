@@ -4,6 +4,14 @@
     width: 19rem;
     border-radius: 5px;
 
+    @include responsive(tablet-landscape) {
+        margin-bottom: 5rem;
+    }
+
+    @include responsive(phone) {
+        margin-bottom: 3rem;
+    }
+
     &__content {
         width: 100%; 
         position: relative;
