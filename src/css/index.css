@@ -286,21 +286,11 @@ html, body {
   color: #A0AEC0;
   margin-bottom: 1rem;
 }
-@media (max-width: 37.5em) {
-  .about__content__presentation--paragraph {
-    font-size: 1.2rem;
-  }
-}
 .about__content__presentation--skill {
   font-size: 1.2rem;
   font-weight: 400;
   color: #A0AEC0;
   margin-bottom: 1rem;
-}
-@media (max-width: 37.5em) {
-  .about__content__presentation--skill {
-    font-size: 1.2rem;
-  }
 }
 .about__content__presentation--skill span {
   background-color: #A0AEC0;
@@ -310,12 +300,11 @@ html, body {
 
 .portfolio {
   width: 100vw;
-  height: 100vh;
+  margin: 5rem 0 5rem 0;
   color: #fff;
 }
 .portfolio__title {
   text-align: center;
-  margin: 5rem 0 5rem 0;
   font-size: 3rem;
 }
 .portfolio__content {
@@ -345,6 +334,16 @@ html, body {
 .card {
   width: 19rem;
   border-radius: 5px;
+}
+@media (max-width: 75rem) {
+  .card {
+    margin-bottom: 5rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .card {
+    margin-bottom: 3rem;
+  }
 }
 .card__content {
   width: 100%;
@@ -386,6 +385,19 @@ html, body {
   color: #A0AEC0;
   text-align: center;
   font-size: 1.2rem;
+}
+
+.contact {
+  width: 100vw;
+  height: 100vh;
+  background: #0E141B;
+  border: 1px solid white;
+}
+.contact__title {
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 5rem;
 }
 
 /* abstracts */
