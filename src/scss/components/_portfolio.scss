@@ -1,0 +1,35 @@
+@use '../abstracts' as *;
+
+.portfolio {
+    width: 100vw;
+    height: 100vh;
+    color: $White;
+
+    &__title {
+        text-align: center;
+        margin: 5rem 0 5rem 0;
+        font-size: 3rem;
+    }
+
+    &__content {
+        width: 90%;
+        margin: 0 auto;
+        padding: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        @include responsive(tablet-landscape) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        @include responsive(phone) {
+            width: 90%;
+        }
+    }
+}

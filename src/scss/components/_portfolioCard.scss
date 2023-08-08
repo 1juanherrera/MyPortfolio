@@ -1,0 +1,53 @@
+@use '../abstracts' as *;
+
+.card {
+    width: 19rem;
+    border-radius: 5px;
+
+    &__content {
+        width: 100%; 
+        position: relative;
+        z-index: 10;
+
+        img {
+            object-fit: contain;
+            width: 100%;
+            border-radius: 5px;
+            height: 100%;
+        }
+
+        &__hover {
+            position: absolute;
+            background: $Color-secondary;
+            z-index: 20;
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &__links {
+                margin-top: 0.5rem;
+    
+                 &--link  {
+                    color: $Color-tertiary;
+                    margin: 1rem;
+                    
+                     svg {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+        &__name {
+            margin-top: 0.5rem;
+            color: $Color-tertiary;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+}

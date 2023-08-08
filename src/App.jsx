@@ -1,14 +1,14 @@
-import { Navbar, Preloader, Hero, AboutMe, Projects } from "./components"
+import { Navbar, Preloader, Hero, AboutMe, Portfolio } from "./components"
 
 
 const App = () => {
   return (
       <>
-        <Preloader />
+        {/* <Preloader /> */}
         <Navbar />
         <Hero />
         <AboutMe />
-        <Projects />
+        <Portfolio />
       </>
   )
 }
