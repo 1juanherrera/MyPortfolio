@@ -4,7 +4,7 @@ import { Navbar, Preloader, Hero, AboutMe, Portfolio, Contact } from "./componen
 const App = () => {
   return (
       <>
-        {/* <Preloader /> */}
+        <Preloader />
         <Navbar />
         <Hero />
         <AboutMe />
