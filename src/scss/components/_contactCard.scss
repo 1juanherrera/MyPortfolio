@@ -1,0 +1,16 @@
+@use '../abstracts/' as *;
+
+.social__card {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    &__icon {
+        margin-right: 0.5rem;
+        
+        svg {
+            font-size: 1.5rem;
+        }
+    }
+}

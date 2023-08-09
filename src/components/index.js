@@ -6,3 +6,4 @@ export * from './Hero';
 export * from './AboutMe';
 export * from './Portfolio';
 export * from './Contact';
+export * from './ContactCard';

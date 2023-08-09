@@ -1,8 +1,10 @@
-import { AiFillHtml5, AiFillGithub } from "react-icons/ai";
+import { AiFillHtml5, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { SiExpress } from "react-icons/si";
 import { PiFramerLogoFill } from "react-icons/pi";
-import { FaCss3Alt, FaFigma, FaSass, FaNodeJs } from "react-icons/fa";
+import { FaCss3Alt, FaFigma, FaSass, FaNodeJs, FaPhoneAlt } from "react-icons/fa";
 import { BiLogoJavascript, BiLogoReact, BiLogoPython, BiLogoTypescript, BiLogoRedux, BiLogoPostgresql, BiLogoBootstrap } from "react-icons/bi";
+import { FiMail, FiInstagram } from "react-icons/fi";
+import { FaLocationDot } from "react-icons/fa6"
 
 // Portfolio Images
 import work1 from '../assets/work1.png'
@@ -103,7 +105,42 @@ export const portfolioImages = [
         github: 'github' 
     }
 ]
-                                                                                                                       
+       
+export const contacts = [
+    {
+        id: 1,
+        icon: <FaLocationDot />,
+        infoText: 'Barranquilla, Colombia',
+    },
+    {
+        id: 2,
+        icon: <FiMail />,
+        infoText: 'juanherrera04502@gmail.com'
+    },
+    {
+        id: 3,
+        icon: <FaPhoneAlt />,
+        infoText: '+57 3153261932'
+    }
+]
+
+export const socials = [ 
+    {
+        id: 1,
+        icon: <AiFillGithub />,
+        link: ''
+    },
+    {
+        id: 2,
+        icon: <AiFillLinkedin />,
+        link: ''
+    },
+    {
+        id: 3,
+        icon: <FiInstagram />,
+        link: ''
+    }
+]
                         
                         
                         
