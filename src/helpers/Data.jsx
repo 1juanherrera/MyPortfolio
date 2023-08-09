@@ -115,7 +115,7 @@ export const contacts = [
     {
         id: 2,
         icon: <FiMail />,
-        infoText: 'juanherrera04502@gmail.com'
+        infoText: 'juan.herreram@pca.edu.co'
     },
     {
         id: 3,

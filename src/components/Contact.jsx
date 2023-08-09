@@ -29,6 +29,25 @@ export const Contact = () => {
                     </div>
                 </div>
                 <div className="contact__form">
+                    <div className="contact__form__content">
+                        <h3 className="contact__form__content__title">Drop a Message</h3>
+                        
+                        <div className="contact__form__content__inputs">
+                            <input type="text" placeholder="First Name" />
+                            <input type="text" placeholder="Last Name"/>
+                        </div>
+                        <div className="contact__form__content__inputs">
+                            <input type="text" placeholder="Email Address" />
+                            <input type="email" placeholder="Phone Number" />
+                        </div>
+                        <div className="contact__form__content__inputs">
+                            <textarea placeholder="Message"></textarea>
+                        </div>
+                        <div className="contact__form__content__button">
+                            <a href="#">Enviar</a>
+                        </div>
+
+                    </div>
 
                 </div>
             </div>

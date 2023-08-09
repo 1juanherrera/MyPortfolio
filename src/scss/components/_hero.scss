@@ -51,9 +51,14 @@
             color: $Color-tertiary;
             width: 40rem;
 
+            @include responsive(tablet-landscape) {
+                width: 100%;
+                font-size: 1.2rem; 
+            }
+
             @include responsive(phone) {
                 width: 90%;
-                font-size: 1.2rem;
+                font-size: 1.2rem; 
             }
         }
 
@@ -74,6 +79,7 @@
                 height: 4.4rem;
                 border-radius: 5px;
                 margin-right: 20px;
+                cursor: pointer;
 
                 @include responsive(tablet-portrait) {
                     margin-bottom: 20px;
@@ -90,13 +96,14 @@
 
             &--2 {
                 background-color: $Color-primary;
-                border: 1px solid white;
+                border: 1px solid $White;
                 width: 15rem;
                 font-family: $Font;
                 color: $White;
                 height: 4.4rem;
                 border-radius: 5px;
                 margin: 0 auto;
+                cursor: pointer;
 
                 @include responsive(tablet-portrait) {
                     margin-bottom: 20px;
@@ -106,7 +113,7 @@
 
                 @include responsive(phone) {
                     height: 3.5rem;
-                    width: 9rem;
+                    width: 11rem;
                 }
             }
 

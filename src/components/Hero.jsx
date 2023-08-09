@@ -15,8 +15,8 @@ export const Hero = () => {
                     </p>
                 </div>
                 <div className="hero__content__button">
-                    <button className="hero__content__button--1">Contact Me</button>
-                    <button className="hero__content__button--2">Download Resume</button>
+                    <button className="hero__content__button--1" type="submit">Contact Me</button>
+                    <button className="hero__content__button--2" type="submit">Download Resume</button>
                 </div>
             </div>
         </div>

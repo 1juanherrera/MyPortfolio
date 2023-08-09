@@ -2,19 +2,18 @@
 
 .contact {
     width: 100vw;
-    height: 100vh;
+    //height: 100vh;
     background: $Color-secondary;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 
     &__main {
         width: 80%;
         height: 80%;
         display: flex;
         position: relative;
-        
+        margin: 5rem 5rem;
 
         @include responsive(tablet-landscape) {
             width: 90%;
@@ -31,9 +30,9 @@
 
     &__card {
         width: 30%;
-        height: 80%;
+        height: 25rem;
         position: absolute;
-        top: 3.5rem;
+        top: 4rem;
         left: 0;
         background: $Color-tertiary;
         border-radius: 5px;
@@ -45,7 +44,7 @@
         @include responsive(tablet-landscape) {
             position: static;
             width: 40%;
-            height: 100%;
+            height: 34rem;
             display: flex;
         }
 
@@ -54,6 +53,8 @@
             align-items: center;      
             justify-content: center;
             width: 100%;
+            height: 15rem;
+            margin-bottom: 5rem;
         }
 
         @include responsive(phone) {
@@ -75,10 +76,10 @@
                 justify-content: center;
                 align-items: start;
                 flex-direction: column;
+                margin: 2rem 2rem;
             }
 
             @include responsive(phone) {
-                margin-top: 2rem;
                 width: 90%;
             }   
 
@@ -88,11 +89,15 @@
 
             &__socials {
                 width: 80%;
-                margin: 0 auto;
+                margin: 0 auto; 
                 margin-bottom: 2rem;
+                
+                @include responsive(phone) {
+                    padding-left: 0.5rem;
+                }
     
                 &--social {
-                    margin: 0.5rem;
+                    margin-right: 0.8rem;
     
                     svg {
                         font-size: 2.5rem;
@@ -113,7 +118,7 @@
                     width: 90%;
                     margin: 0 auto;
                     justify-content: start;
-                    margin-top: 2rem;
+                    margin-bottom: 1.5rem;
                 }
             }
         }
@@ -121,20 +126,142 @@
 
     &__form {
         width: 90%;
+        height: 34rem;
         background: $Color-primary;
         margin-left: 8rem;
         border-radius: 5px;
+        color: $Color-tertiary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__content {
+            margin-left: 7rem;
+            width: 39rem;
+            height: 25rem;
+
+            @include responsive(tablet-landscape) {
+               margin-left: 1rem;
+            }
+
+            @include responsive(tablet-portrait) {
+                margin: 3rem 3rem;
+            }
+
+            @include responsive(phone) {
+                width: 90%;
+                margin-bottom: 10rem;
+            }
+
+            &__title {
+                font-size: 1.6rem;
+                margin-left: 1rem;
+            }
+
+            &__inputs {
+
+                @include responsive(phone) {
+                    display: flex;
+                    justify-content: start;
+                    align-items: start;
+                    flex-direction: column;
+                }
+
+                input {
+                    background: $Color-primary;
+                    border: none;
+                    outline: none;
+                    border-bottom: 2px solid $Color-tertiary;
+                    width: 16rem;
+                    font-family: 'Popins', sans-serif;
+                    font-size: 0.875rem;
+                    padding-bottom: 0.3rem;
+                    margin: 2rem 2rem 2rem 1rem;
+                    color: $Color-tertiary;
+
+                    @include responsive(tablet-landscape) {
+                        width: 12rem;
+                    }
+
+                    @include responsive(tablet-portrait) {
+                        width: 14rem;
+                    }
+
+                    @include responsive(phone) {
+                        width: 90%;
+                    }
+                }
+
+                input::placeholder {
+                    color: $Color-tertiary;
+                }
+
+
+                textarea {
+                    font-family: 'Popins', sans-serif;
+                    background: $Color-primary;
+                    border: none;
+                    border-bottom: 2px solid $Color-tertiary;
+                    margin: 1rem 2rem 2rem 1rem;
+                    width: 35rem;
+                    resize: none;
+                    outline: none;
+                    padding-bottom: 2.5rem;
+                    color: $Color-tertiary;
+                    font-size: 0.875rem;
+
+                    @include responsive(tablet-landscape) {
+                        width: 27rem;
+                    }
+
+                    @include responsive(tablet-portrait) {
+                        width: 31rem;
+                    }
+
+                    @include responsive(phone) {
+                        width: 90%;
+                    }
+                }
+
+                textarea::placeholder {
+                    color: $Color-tertiary;
+                }
+            }
+
+            &__button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: $White;
+                width: 7rem;
+                height: 3rem;
+                margin-left: 1rem;
+                border-radius: 5px;
+                background: $Color-tertiary;
+
+                a {
+                    text-decoration: none;
+                    color: $Color-primary;
+                }
+            }
+        }
 
         @include responsive(tablet-landscape) {
             margin-left: 0;
             width: 60%;
-            height: 100%;
+            margin-top: 5rem;
+            margin-bottom: 5rem;
         }
 
         @include responsive(tablet-portrait) {
             margin-left: 0;
             width: 100%;
-            height: 55rem;
+            margin-bottom: 0;
+        }
+
+        @include responsive(phone) {
+            margin-top: 5rem;
+            height: 45rem;
         }
     }
 }
