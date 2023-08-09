@@ -557,6 +557,9 @@ html, body {
   font-size: 1.6rem;
   margin-left: 1rem;
 }
+.contact__form__content__inputs {
+  background: #192127;
+}
 @media (max-width: 37.5em) {
   .contact__form__content__inputs {
     display: flex;

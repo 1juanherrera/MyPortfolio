@@ -159,6 +159,7 @@
             }
 
             &__inputs {
+                background: $Color-primary;
 
                 @include responsive(phone) {
                     display: flex;
