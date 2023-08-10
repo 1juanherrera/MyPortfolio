@@ -22,7 +22,7 @@ export const Contact = () => {
                         {
                             socials.map(( social ) => {
                                 return (
-                                    <a className="contact__card__content__socials--social" key={ social.id } href="">{ social.icon }</a>
+                                    <a className="contact__card__content__socials--social" target="_blank" key={ social.id } href={social.link}>{ social.icon }</a>
                                 )
                             })
                         }
