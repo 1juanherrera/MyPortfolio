@@ -2,7 +2,7 @@ import { icons } from "../helpers"
 
 export const AboutMe = () => {
     return (
-        <div className="about">
+        <div className="about" id="about me">
             <div className="about__content">
                 <div className="about__content__icons">
                 {

@@ -3,7 +3,7 @@ import { PortfolioCard } from "./PortfolioCard"
 
 export const Portfolio = () => {
     return (
-        <div className="portfolio">
+        <div className="portfolio" id="portfolio">
             <h3 className="portfolio__title">Portfolio</h3>
             <div className="portfolio__content">
                 {

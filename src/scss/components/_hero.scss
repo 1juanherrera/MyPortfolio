@@ -80,6 +80,11 @@
                 border-radius: 5px;
                 margin-right: 20px;
                 cursor: pointer;
+                
+                a {
+                    text-decoration: none;
+                    color: $White;
+                }   
 
                 @include responsive(tablet-portrait) {
                     margin-bottom: 20px;
@@ -104,6 +109,11 @@
                 border-radius: 5px;
                 margin: 0 auto;
                 cursor: pointer;
+
+                a {
+                    text-decoration: none;
+                    color: $White;
+                } 
 
                 @include responsive(tablet-portrait) {
                     margin-bottom: 20px;

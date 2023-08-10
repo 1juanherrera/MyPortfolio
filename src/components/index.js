@@ -1,6 +1,6 @@
 
 
-export * from './Navbar';
+export * from './ButtonNav';
 export * from './Preloader';
 export * from './Hero';
 export * from './AboutMe';

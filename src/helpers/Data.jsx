@@ -129,12 +129,12 @@ export const socials = [
     {
         id: 1,
         icon: <AiFillGithub />,
-        link: ''
+        link: 'https://github.com/1juanherrera'
     },
     {
         id: 2,
         icon: <AiFillLinkedin />,
-        link: ''
+        link: 'https://www.linkedin.com/in/juanherreramu%C3%B1oz/'
     },
     {
         id: 3,
@@ -142,6 +142,8 @@ export const socials = [
         link: ''
     }
 ]
+
+export const navLinks = [ "start", "about me", "portfolio", "contact" ]
                         
                         
                         

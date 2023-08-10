@@ -1,11 +1,16 @@
 @use '../abstracts' as *;
 
-.nav {
-    width: 100vw;
-    height: 70px; 
-    
+.navlink {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: $Accent;
+    z-index: 5000;
+
     &__button {
-        z-index: 100;
+        border: 1px solid white;
         height: 4rem;
         width: 4rem;
         position: fixed;
@@ -33,5 +38,29 @@
             right: 3rem;
             top: 2rem;
         }
+    }
+
+    &__content {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        &__text {
+            color: $Color-tertiary;
+            text-decoration: none;
+            font-size: 2.5rem;
+            margin: 1rem;
+            text-transform: uppercase;
+            font-weight: 600;
+
+            &:hover {
+                color: $Color-primary;
+                transition: 0.4s;
+            }
+        }
+
+
     }
 }
