@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux"
-import { ButtonNav, Preloader, Hero, AboutMe, Portfolio, Contact } from "./components"
+import { ButtonNav, Preloader, Hero, AboutMe, Portfolio, Contact, Switch } from "./components"
 import { NavLink } from "./components/NavLink"
 
 export const App = () => {
@@ -9,8 +9,9 @@ export const App = () => {
   return (
       <>
         { isShow && <NavLink /> }
-        <Preloader />
+        {/* <Preloader /> */}
         <ButtonNav />
+        <Switch />
         <Hero />
         <AboutMe />
         <Portfolio />

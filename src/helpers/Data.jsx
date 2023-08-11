@@ -44,7 +44,7 @@ export const icons = [
     },
     {
         icon: <BiLogoRedux />,
-        name: 'Redux0'
+        name: 'Redux'
     },
     {
         icon: <FaSass />,
