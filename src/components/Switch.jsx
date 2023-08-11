@@ -4,7 +4,7 @@ import { TbArrowBadgeUpFilled, TbArrowBadgeDownFilled } from "react-icons/tb";
 
 export const Switch = () => {
 
-    const [ isOpen, setIsOpen ] = useState( true )    
+    const [ isOpen, setIsOpen ] = useState( false )    
 
     return (
         <div className="switch" style={{ height: isOpen ? '5rem' : '2rem' }}>
