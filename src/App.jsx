@@ -1,4 +1,4 @@
-import { useDispatch, useSelector } from "react-redux"
+import { useSelector } from "react-redux"
 import { ButtonNav, Preloader, Hero, AboutMe, Portfolio, Contact, Switch } from "./components"
 import { NavLink } from "./components/NavLink"
 
