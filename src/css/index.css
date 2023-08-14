@@ -756,6 +756,7 @@ html, body {
   margin: 1rem;
   text-transform: uppercase;
   font-weight: 600;
+  outline: none;
 }
 .navlink__content__text:hover {
   color: #192127;
@@ -795,7 +796,7 @@ html, body {
   background: #2D3748;
 }
 .switch svg {
-  color: #0E141B;
+  color: #A0AEC0;
   position: absolute;
   top: 0;
 }
@@ -814,8 +815,8 @@ html, body {
   text-align: center;
 }
 .switch__toggle__label::after {
-  content: "";
-  font-size: 1rem;
+  content: "EN";
+  font-size: 1.2rem;
   position: absolute;
   width: 30px;
   height: 30px;
@@ -827,7 +828,7 @@ html, body {
   transition: all 0.4s;
 }
 input:checked + .switch__toggle__label::after {
-  content: "";
+  content: "ES";
   transform: translate(40px);
   background: #A0AEC0;
   color: #2D3748;

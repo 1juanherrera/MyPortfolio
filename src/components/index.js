@@ -8,3 +8,5 @@ export * from './Portfolio';
 export * from './Contact';
 export * from './ContactCard';
 export * from './Switch';
+export * from './NavBarLinks';
+export * from './NavLink';

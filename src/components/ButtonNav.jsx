@@ -1,6 +1,6 @@
 import { FaBars } from "react-icons/fa";
 import { useDispatch } from "react-redux";
-import { open } from '../store/slices/show/showSlice'
+import { open } from '../store/slices/show'
 
 export const ButtonNav = () => {
 

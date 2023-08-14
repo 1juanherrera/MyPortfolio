@@ -1,9 +1,9 @@
 import { useDispatch } from "react-redux"
-import { navLinks } from "../helpers"
+import { navbarLinks } from "../helpers"
 import { close } from '../store/slices/show/showSlice'
 import { motion } from "framer-motion"
 
-export const NavLink = () => {
+export const NavBarLinks = () => {
 
     const dispatch = useDispatch()
 
@@ -16,7 +16,7 @@ export const NavLink = () => {
                 <button onClick={() => dispatch( close() )} className="navlink__button"> <i className="bx bx-x bx-lg"></i> </button>
             <div className="navlink__content">
                 {
-                    navLinks.map(( navLink, index ) => {
+                    navbarLinks.map(( navLink, index ) => {
                         return (
                             <a onClick={() => dispatch( close() )} className="navlink__content__text" key={ index } href={`#${navLink}`}>{ navLink }</a>
                         )

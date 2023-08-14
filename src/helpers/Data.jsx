@@ -144,6 +144,8 @@ export const socials = [
 ]
 
 export const navLinks = [ "start", "about me", "portfolio", "contact" ]
+
+export const navbarLinks = [ "Inicio", "acerca de mí", "portafolio", "contacto" ]
                         
                         
                         

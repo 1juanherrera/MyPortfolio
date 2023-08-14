@@ -1,10 +1,14 @@
 import { useState } from "react";
 import { TbArrowBadgeUpFilled, TbArrowBadgeDownFilled } from "react-icons/tb";
+import { useDispatch } from "react-redux";
+import { changeLanguage } from "../store/slices/language";
 
 
 export const Switch = () => {
 
-    const [ isOpen, setIsOpen ] = useState( false )    
+    const [ isOpen, setIsOpen ] = useState( false );
+    
+    const dispatch = useDispatch();
 
     return (
         <div className="switch" style={{ height: isOpen ? '5rem' : '2rem' }}>
@@ -14,7 +18,7 @@ export const Switch = () => {
             </button>
 
                 <div className="switch__toggle" style={{ display: isOpen ? 'flex' : 'none' }}>
-                    <input type="checkbox" id="toggle" className="switch__toggle__offscreen"/>
+                    <input onChange={() => dispatch( changeLanguage() )} type="checkbox" id="toggle" className="switch__toggle__offscreen"/>
                     <label htmlFor="toggle" className="switch__toggle__label"></label>
                 </div>  
             

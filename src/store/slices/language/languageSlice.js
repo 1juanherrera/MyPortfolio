@@ -7,9 +7,9 @@ export const languageSlice = createSlice({
    },
    reducers: {
         changeLanguage: ( state ) => {
-            state.isLanguage = true;
+            state.isLanguage = !state.isLanguage;
         },
     }
 });
 
-export const { open, close } = languageSlice.actions;
+export const { changeLanguage } = languageSlice.actions;
