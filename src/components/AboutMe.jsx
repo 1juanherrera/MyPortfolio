@@ -35,7 +35,7 @@ export const AboutMe = () => {
                         🗄️ Desarrollo <span>de una API de back-end robusta, eficiente y segura</span> con conectividad de base de datos NoSQL
                          </p>
                     <p className="about__content__presentation--skill">
-                        🎨 Diseño con <span>interfaces centradas en el usuario</span> para lograr una experiencia de usuario de primer nive
+                        🎨 Diseño con <span>interfaces centradas en el usuario</span> para lograr una experiencia de usuario de primer nivel
                         </p>
                 </div>
             </div>
