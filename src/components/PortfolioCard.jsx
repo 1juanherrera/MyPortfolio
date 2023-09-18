@@ -13,7 +13,7 @@ export const PortfolioCard = ({ img, name, visit, github }) => {
                     transition={{ duration: 0.2, ease: "easeInOut" }}
                     className='card__content__hover'>
                         <div className="card__content__hover--links">
-                            <a href={ visit } target='_blank' className="card__content__hover__links--link">
+                            <a href={ visit } style={{ display: visit == null ? 'none' : '' }} target='_blank' className="card__content__hover__links--link">
                                 <MdVisibility />
                                 </a>
                             <a href={ github } target='_blank' className="card__content__hover__links--link">

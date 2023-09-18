@@ -78,13 +78,6 @@ export const icons = [
 
 export const portfolioImages = [
     {
-        id: 1,
-        img: work1,
-        name: 'Portfolio',
-        visit: 'link',
-        github: 'https://github.com/1juanherrera/MyPortfolio' 
-    },
-    {
         id: 2,
         img: work2,
         name: 'xMovies',
@@ -104,6 +97,12 @@ export const portfolioImages = [
         name: 'WeatherApp',
         visit: 'https://weather-app-jh1.netlify.app/',
         github: 'https://github.com/1juanherrera/weatherApp' 
+    },
+    {
+        id: 1,
+        img: work1,
+        name: 'Portfolio',
+        github: 'https://github.com/1juanherrera/MyPortfolio' 
     }
 ]
        
@@ -121,7 +120,8 @@ export const contacts = [
     {
         id: 3,
         icon: <FaPhoneAlt />,
-        infoText: '+57 3153261932'
+        infoText: '+57 3153261932',
+        link: 'https://w.app/31tUcT'
     }
 ]
 
