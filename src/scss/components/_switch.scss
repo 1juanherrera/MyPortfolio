@@ -53,7 +53,7 @@
             text-align: center;
 
             &::after {
-                content: 'EN';
+                content: '';
                 font-size: 1.2rem;
                 position: absolute;
                 width: 30px;
@@ -69,7 +69,7 @@
 
 
         input:checked + &__label::after {
-            content: 'ES';
+            content: '';
             transform: translate(40px);
             background: $Color-tertiary;
             color: $Accent;
