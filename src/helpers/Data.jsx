@@ -80,30 +80,30 @@ export const portfolioImages = [
     {
         id: 1,
         img: work1,
-        name: 'Saki',
+        name: 'Portfolio',
         visit: 'link',
-        github: 'github' 
+        github: 'https://github.com/1juanherrera/MyPortfolio' 
     },
     {
         id: 2,
         img: work2,
-        name: 'Coursa',
-        visit: 'link',
-        github: 'github' 
+        name: 'xMovies',
+        visit: 'https://x-movies-olive.vercel.app/',
+        github: 'https://github.com/1juanherrera/xMovies' 
     },
     {
         id: 3,
         img: work3,
-        name: 'Imax',
-        visit: 'link',
-        github: 'github' 
+        name: 'Pokedex',
+        visit: 'https://pokedex-jhs.netlify.app/',
+        github: 'https://github.com/1juanherrera/pokedex' 
     },
     {
         id: 4,
         img: work4,
-        name: 'Magical Things',
-        visit: 'link',
-        github: 'github' 
+        name: 'WeatherApp',
+        visit: 'https://weather-app-jh1.netlify.app/',
+        github: 'https://github.com/1juanherrera/weatherApp' 
     }
 ]
        
@@ -139,14 +139,10 @@ export const socials = [
     {
         id: 3,
         icon: <FiInstagram />,
-        link: ''
+        link: 'https://www.instagram.com/1juanherrera/'
     }
 ]
 
 export const navLinks = [ "start", "about me", "portfolio", "contact" ]
 
-export const navbarLinks = [ "Inicio", "acerca de mí", "portafolio", "contacto" ]
-                        
-                        
-                        
-                        
+export const navbarLinks = [ "Inicio", "acerca de mí", "portafolio", "contacto" ]              

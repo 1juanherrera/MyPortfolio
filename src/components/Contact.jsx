@@ -1,11 +1,21 @@
 import { useSelector } from "react-redux"
 import { contacts, socials } from "../helpers"
 import { ContactCard } from "./ContactCard"
-
+import emailjs from "@emailjs/browser"
 
 export const Contact = () => {
 
     const { isLanguage } = useSelector( state => state.language )
+
+    const sendEmail = ( event ) => {
+        event.preventDefault();
+
+        emailjs.sendForm('service_0zz63x8', 'template_4op502v', event.target, 
+        'uC57KA3_4rovtUkSz').then(response => console.log(response))
+        .catch(error => console.error(error))
+
+        event.target.reset();
+    }
 
     return (
         <div className="contact" id="contact">
@@ -38,27 +48,27 @@ export const Contact = () => {
                     </div>
                 </div>
                 <div className="contact__form">
-                    <div className="contact__form__content">
+                    <form className="contact__form__content" onSubmit={sendEmail}>
                         <h3 className="contact__form__content__title">
                             { isLanguage ? 'Deja un mensaje' : 'Drop a Message'}
                             </h3>
                         
                         <div className="contact__form__content__inputs">
-                            <input type="text" placeholder={ isLanguage ? 'Nombre' : 'First Name' } />
-                            <input type="text" placeholder={ isLanguage ? 'Apellido' : 'Last Name' }/>
+                            <input name="user_name" type="text" placeholder={ isLanguage ? 'Nombre' : 'First Name' } />
+                            <input name="user_lastname" type="text" placeholder={ isLanguage ? 'Apellido' : 'Last Name' }/>
                         </div>
                         <div className="contact__form__content__inputs">
-                            <input type="text" placeholder={ isLanguage ? 'Correo' : 'Email Address' } />
-                            <input type="email" placeholder={ isLanguage ? 'Telefono' : 'Phone Number' } />
+                            <input name="user_email" type="email" placeholder={ isLanguage ? 'Correo' : 'Email Address' } />
+                            <input name="user_phone" type="text" placeholder={ isLanguage ? 'Telefono' : 'Phone Number' } />
                         </div>
                         <div className="contact__form__content__inputs">
-                            <textarea placeholder={ isLanguage ? 'Mensaje' : 'Message' }></textarea>
+                            <textarea name="user_message" placeholder={ isLanguage ? 'Mensaje' : 'Message' }></textarea>
                         </div>
-                        <div className="contact__form__content__button">
-                            <a href="#">{ isLanguage ? 'Enviar' : 'Submit' }</a>
-                        </div>
+                        <button className="contact__form__content__button">
+                            { isLanguage ? 'Enviar' : 'Submit' }
+                        </button>
 
-                    </div>
+                    </form>
 
                 </div>
             </div>

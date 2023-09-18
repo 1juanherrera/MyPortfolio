@@ -14,7 +14,7 @@ export const Hero = () => {
                         <h3 className="hero__content__headline">Desarrollador y diseñador frontend</h3>
                     <div className="hero__content__about">
                         <p>
-                        Soy un ávido desarrollador web con experiencia en la creación de aplicaciones web 
+                        Soy un ávido desarrollador web apasionado por el mundo UI con experiencia en la creación de aplicaciones web 
                         receptivas de pila completa que a sus clientes les encantaría usar! Déjame llevarte 
                         en un viaje desde el desarrollo hasta la implementación.
                         </p>
@@ -35,9 +35,11 @@ export const Hero = () => {
                         <h3 className="hero__content__headline">Frontend Developer & Designer</h3>
                     <div className="hero__content__about">
                         <p>
-                            I'm an avid web developer experienced in building full-stack
+                            I'm an avid web developer passionate about the world UI experienced in building full-stack
                             responsive web applications which your customers would love using! Let
-                            me take you on a journey from development to deployment.
+                            me take you on a journey from development to deployment. I would love to be part of your team, 
+                            if you have any questions or want to know more about me, you can contact me through my social 
+                            networks or by sending me a message through the contact form.
                         </p>
                     </div>
                     <div className="hero__content__button">

@@ -172,9 +172,9 @@
                     background: $Color-primary;
                     border: none;
                     outline: none;
+                    font-family: $Font;
                     border-bottom: 2px solid $Color-tertiary;
                     width: 16rem;
-                    font-family: 'Popins', sans-serif;
                     font-size: 0.875rem;
                     padding-bottom: 0.3rem;
                     margin: 2rem 2rem 2rem 1rem;
@@ -199,7 +199,7 @@
 
 
                 textarea {
-                    font-family: 'Popins', sans-serif;
+                    font-family: $Font;
                     background: $Color-primary;
                     border: none;
                     border-bottom: 2px solid $Color-tertiary;
@@ -239,6 +239,10 @@
                 margin-left: 1rem;
                 border-radius: 5px;
                 background: $Color-tertiary;
+                border: none;
+                font-family: $Font;
+                font-size: 1rem;
+                font-weight: 400;
 
                 a {
                     text-decoration: none;
