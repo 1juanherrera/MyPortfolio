@@ -40,7 +40,7 @@
             align-items: center;
 
             @include responsive(phone) {
-                display: none;
+                display: none;  
             }
 
             &__links {
