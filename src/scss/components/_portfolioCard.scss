@@ -3,6 +3,8 @@
 .card {
     width: 19rem;
     border-radius: 5px;
+    outline: none;
+    text-decoration: none;
 
     @include responsive(tablet-landscape) {
         margin-bottom: 5rem;
@@ -36,6 +38,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
+            @include responsive(phone) {
+                display: none;
+            }
 
             &__links {
                 margin-top: 0.5rem;

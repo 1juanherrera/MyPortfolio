@@ -244,6 +244,11 @@
                 font-size: 1rem;
                 font-weight: 400;
                 color: $Color-primary;
+
+                &:active {
+                    opacity: 0.5;
+                    transition: .2s;
+                }
             }
         }
 

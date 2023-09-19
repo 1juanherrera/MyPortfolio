@@ -97,6 +97,16 @@
                     height: 3.5rem;
                     width: 9rem;
                 }
+
+                &:hover {
+                    opacity: 0.7;
+                    transition: .2s;
+                }
+
+                &:active {
+                    opacity: 0.3;
+                    transition: .2s;
+                }
             }
 
             &--2 {
@@ -124,6 +134,16 @@
                 @include responsive(phone) {
                     height: 3.5rem;
                     width: 11rem;
+                }
+
+                &:hover {
+                    opacity: 0.7;
+                    transition: .2s;
+                }
+
+                &:active {
+                    opacity: 0.3;
+                    transition: .2s;
                 }
             }
 
