@@ -82,7 +82,9 @@ export const portfolioImages = [
         img: work2,
         name: 'xMovies',
         visit: 'https://x-movies-olive.vercel.app/',
-        github: 'https://github.com/1juanherrera/xMovies' 
+        github: 'https://github.com/1juanherrera/xMovies',
+        design: 'https://www.figma.com/file/UUSUyIn6guz9aOFa4Qg7av/xMovies?type=design&mode=design&t=J7UJ8SLCH0qSlG7F-1'
+
     },
     {
         id: 3,
@@ -102,7 +104,8 @@ export const portfolioImages = [
         id: 1,
         img: work1,
         name: 'Portfolio',
-        github: 'https://github.com/1juanherrera/MyPortfolio' 
+        github: 'https://github.com/1juanherrera/MyPortfolio',
+        design: 'https://www.figma.com/file/vrlxFfdoLyBFOSOVj4KRm5/Mi-portafolio?type=design&node-id=0%3A1&mode=design&t=J7UJ8SLCH0qSlG7F-1'
     }
 ]
        

@@ -1,8 +1,9 @@
 import { MdVisibility } from 'react-icons/md';
 import { HiCode } from 'react-icons/hi';
+import { FiFigma } from 'react-icons/fi';
 import { motion } from "framer-motion"
 
-export const PortfolioCard = ({ img, name, visit, github }) => {
+export const PortfolioCard = ({ img, name, visit, github, design }) => {
     return (
         <a href={ visit } className="card">
                 <div className="card__content">
@@ -18,6 +19,9 @@ export const PortfolioCard = ({ img, name, visit, github }) => {
                                 </a>
                             <a href={ github } target='_blank' className="card__content__hover__links--link">
                                 <HiCode />
+                                </a>
+                            <a href={ design } style={{ display: design == null ? 'none' : '' }} target='_blank' className="card__content__hover__links--link">
+                                <FiFigma />
                                 </a>
                         </div>
                 </motion.div>
