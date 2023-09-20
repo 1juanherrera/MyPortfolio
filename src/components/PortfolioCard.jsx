@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 
 export const PortfolioCard = ({ img, name, visit, github, design }) => {
     return (
-        <a href={ visit } className="card">
+        <div className="card">
                 <div className="card__content">
                     <img src={ img } alt={ name } />
                 <motion.div 
@@ -26,7 +26,9 @@ export const PortfolioCard = ({ img, name, visit, github, design }) => {
                         </div>
                 </motion.div>
                 </div>
-                <p className="card__name">{ name }</p>  
-        </a>
+                <div className="card__name">
+                    <a href={ visit } target='blank'>{ name }</a>     
+                </div> 
+        </div>
     )
 }

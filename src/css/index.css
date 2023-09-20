@@ -117,6 +117,14 @@ html, body {
     width: 9rem;
   }
 }
+.hero__content__button--1:hover {
+  opacity: 0.7;
+  transition: 0.2s;
+}
+.hero__content__button--1:active {
+  opacity: 0.3;
+  transition: 0.2s;
+}
 .hero__content__button--2 {
   background-color: #192127;
   border: 1px solid #fff;
@@ -144,6 +152,14 @@ html, body {
     height: 3.5rem;
     width: 11rem;
   }
+}
+.hero__content__button--2:hover {
+  opacity: 0.7;
+  transition: 0.2s;
+}
+.hero__content__button--2:active {
+  opacity: 0.3;
+  transition: 0.2s;
 }
 
 /* abstracts */
@@ -366,6 +382,8 @@ html, body {
 .card {
   width: 19rem;
   border-radius: 5px;
+  outline: none;
+  text-decoration: none;
 }
 @media (max-width: 75rem) {
   .card {
@@ -402,6 +420,11 @@ html, body {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 37.5em) {
+  .card__content__hover {
+    display: none;
+  }
+}
 .card__content__hover__links {
   margin-top: 0.5rem;
 }
@@ -414,9 +437,14 @@ html, body {
 }
 .card__name {
   margin-top: 0.5rem;
-  color: #A0AEC0;
   text-align: center;
   font-size: 1.2rem;
+  width: 100%;
+  text-decoration: none;
+}
+.card__name a {
+  text-decoration: none;
+  color: #A0AEC0;
 }
 
 /* abstracts */
@@ -597,9 +625,9 @@ html, body {
   background: #192127;
   border: none;
   outline: none;
+  font-family: "Poppins", sans-serif;
   border-bottom: 2px solid #A0AEC0;
   width: 16rem;
-  font-family: "Popins", sans-serif;
   font-size: 0.875rem;
   padding-bottom: 0.3rem;
   margin: 2rem 2rem 2rem 1rem;
@@ -627,7 +655,7 @@ html, body {
   color: #A0AEC0;
 }
 .contact__form__content__inputs textarea {
-  font-family: "Popins", sans-serif;
+  font-family: "Poppins", sans-serif;
   background: #192127;
   border: none;
   border-bottom: 2px solid #A0AEC0;
@@ -670,10 +698,15 @@ html, body {
   margin-left: 1rem;
   border-radius: 5px;
   background: #A0AEC0;
-}
-.contact__form__content__button a {
-  text-decoration: none;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
   color: #192127;
+}
+.contact__form__content__button:active {
+  opacity: 0.5;
+  transition: 0.2s;
 }
 @media (max-width: 75rem) {
   .contact__form {
@@ -703,9 +736,11 @@ html, body {
   display: flex;
   justify-content: start;
   align-items: center;
+  color: #192127;
 }
 .social__card__icon {
   margin-right: 0.5rem;
+  color: #192127;
 }
 .social__card__icon svg {
   font-size: 1.5rem;
@@ -725,7 +760,6 @@ html, body {
   z-index: 5000;
 }
 .navlink__button {
-  border: 1px solid white;
   height: 4rem;
   width: 4rem;
   position: fixed;
@@ -777,7 +811,7 @@ html, body {
 
 /* abstracts */
 .switch {
-  z-index: 100;
+  z-index: 200;
   height: 5rem;
   width: 6rem;
   position: fixed;
@@ -828,7 +862,7 @@ html, body {
   text-align: center;
 }
 .switch__toggle__label::after {
-  content: "EN";
+  content: "";
   font-size: 1.2rem;
   position: absolute;
   width: 30px;
@@ -841,7 +875,7 @@ html, body {
   transition: all 0.4s;
 }
 input:checked + .switch__toggle__label::after {
-  content: "ES";
+  content: "";
   transform: translate(40px);
   background: #A0AEC0;
   color: #2D3748;
