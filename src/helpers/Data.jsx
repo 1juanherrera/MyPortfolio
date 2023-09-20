@@ -90,7 +90,7 @@ export const portfolioImages = [
         id: 3,
         img: work3,
         name: 'Pokedex',
-        visit: 'https://pokedex-jhs.netlify.app/',
+        visit: 'https://pokedex-git-main-1juanherrera.vercel.app/',
         github: 'https://github.com/1juanherrera/pokedex' 
     },
     {
