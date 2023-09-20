@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux"
-
+import resume from '../documentPDF/cvJuan.pdf'
 
 export const Hero = () => {
 
@@ -25,7 +25,7 @@ export const Hero = () => {
                             <a href="#contact">Contáctame</a>
                         </button>
                         <button className="hero__content__button--2" type="submit">
-                            <a href="">Descargar CV</a>
+                            <a href={ resume } target="_blank" >Currículum</a>
                         </button>
                     </div>
                 </div>
@@ -47,7 +47,7 @@ export const Hero = () => {
                             <a href="#contact">Contact Me</a>
                         </button>
                         <button className="hero__content__button--2" type="submit">
-                            <a href="">Download Resume</a>
+                            <a href={ resume } target="_blank" >Resume</a>
                         </button>
                     </div>
                 </div>
