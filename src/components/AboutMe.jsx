@@ -32,7 +32,7 @@ export const AboutMe = () => {
                         💻 Creación de interfaces de usuario <span>front-end altamente interactivos</span> como aplicaciones de una sola página
                         </p>
                     <p className="about__content__presentation--skill">
-                        🗄️ Desarrollo <span>de una API de back-end robusta, eficiente y segura</span> con conectividad de base de datos
+                        🗄️ Desarrollo de una <span>API de back-end robusta, eficiente y segura</span> con conectividad de base de datos
                          </p>
                     <p className="about__content__presentation--skill">
                         🎨 Diseño con <span>interfaces centradas en el usuario</span> para lograr una experiencia de usuario de primer nivel
