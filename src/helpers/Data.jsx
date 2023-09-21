@@ -148,4 +148,21 @@ export const socials = [
 
 export const navLinks = [ "start", "about me", "portfolio", "contact" ]
 
-export const navbarLinks = [ "Inicio", "acerca de mí", "portafolio", "contacto" ]              
+export const navbarLinks = [ 
+    {
+        spanish: "Inicio",
+        english: "start" 
+    }, 
+    {
+        spanish: "acerca de mí", 
+        english: "about me"
+    },
+    {
+        spanish: "portafolio", 
+        english: "portfolio"
+    },
+    {
+        spanish: "contacto",
+        english: "contact"
+    }
+]              

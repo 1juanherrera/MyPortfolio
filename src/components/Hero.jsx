@@ -6,7 +6,7 @@ export const Hero = () => {
     const { isLanguage } = useSelector( state => state.language )
 
     return (
-        <div className="hero">
+        <div className="hero" id="start">
             { isLanguage ?
                     <div className="hero__content">
                         <p className="hero__content__greeting">Hola, soy</p>

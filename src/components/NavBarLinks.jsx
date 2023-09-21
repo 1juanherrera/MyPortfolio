@@ -18,7 +18,7 @@ export const NavBarLinks = () => {
                 {
                     navbarLinks.map(( navLink, index ) => {
                         return (
-                            <a onClick={() => dispatch( close() )} className="navlink__content__text" key={ index } href={`#${navLink}`}>{ navLink }</a>
+                            <a onClick={() => dispatch( close() )} className="navlink__content__text" key={ index } href={`#${navLink.english}`}>{ navLink.spanish }</a>
                         )
                     })
                 }
