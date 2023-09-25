@@ -124,7 +124,7 @@ export const contacts = [
         id: 3,
         icon: <FaPhoneAlt />,
         infoText: '+57 3153261932',
-        link: 'https://w.app/31tUcT'
+        link: 'https://wa.link/ezwso8'
     }
 ]
 
