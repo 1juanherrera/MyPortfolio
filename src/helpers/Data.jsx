@@ -2,7 +2,7 @@
 import { AiFillHtml5, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { SiExpress } from "react-icons/si";
 import { PiFramerLogoFill } from "react-icons/pi";
-import { FaCss3Alt, FaFigma, FaSass, FaNodeJs, FaPhoneAlt } from "react-icons/fa";
+import { FaCss3Alt, FaFigma, FaSass, FaNodeJs, FaPhoneAlt, FaJava } from "react-icons/fa";
 import { BiLogoJavascript, BiLogoReact, BiLogoPython, BiLogoTypescript, BiLogoRedux, BiLogoPostgresql, BiLogoBootstrap } from "react-icons/bi";
 import { FiMail, FiInstagram } from "react-icons/fi";
 import { FaLocationDot } from "react-icons/fa6"
@@ -71,8 +71,8 @@ export const icons = [
         name: 'Express'
     },
     {
-        icon: <PiFramerLogoFill />,
-        name: 'Framer'
+        icon: <FaJava />,
+        name: 'Java'
     }
 ];  
 
