@@ -1,5 +1,5 @@
-import { useSelector } from "react-redux"
-import resume from '../documentPDF/cvJuan.pdf'
+import { useSelector } from "react-redux";
+import resume from "../documentPDF/pbJuanHerrera.pdf";
 
 export const Hero = () => {
 
@@ -25,18 +25,18 @@ export const Hero = () => {
                             <a href="#contact">Contáctame</a>
                         </button>
                         <button className="hero__content__button--2" type="submit">
-                            <a href={ resume } target="_blank" >Currículum</a>
+                            <a href={ resume } rel="noreferrer"  target="_blank" >Currículum</a>
                         </button>
                     </div>
                 </div>
                 :
                 <div className="hero__content">
-                        <p className="hero__content__greeting">Hello there, I'm</p>
+                        <p className="hero__content__greeting">Hello there, I&apos;m</p>
                         <h2 className="hero__content__name">Juan Herrera</h2> 
                         <h3 className="hero__content__headline">Frontend Developer & Designer</h3>
                     <div className="hero__content__about">
                         <p>
-                            I'm an avid web developer passionate about the world UI experienced in building
+                            I&apos;m an avid web developer passionate about the world UI experienced in building
                             responsive web applications which your customers would love using! I would love to be part of your team, 
                             if you have any questions or want to know more about me, you can contact me through my social 
                             networks or by sending me a message through the contact form.
@@ -47,7 +47,7 @@ export const Hero = () => {
                             <a href="#contact">Contact Me</a>
                         </button>
                         <button className="hero__content__button--2" type="submit">
-                            <a href={ resume } target="_blank" >Resume</a>
+                            <a href={ resume } rel="noreferrer"  target="_blank" >Resume</a>
                         </button>
                     </div>
                 </div>
