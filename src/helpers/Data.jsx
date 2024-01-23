@@ -1,7 +1,6 @@
 // icons
 import { AiFillHtml5, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { SiExpress } from "react-icons/si";
-import { PiFramerLogoFill } from "react-icons/pi";
 import { FaCss3Alt, FaFigma, FaSass, FaNodeJs, FaPhoneAlt, FaJava } from "react-icons/fa";
 import { BiLogoJavascript, BiLogoReact, BiLogoPython, BiLogoTypescript, BiLogoRedux, BiLogoPostgresql, BiLogoBootstrap } from "react-icons/bi";
 import { FiMail, FiInstagram } from "react-icons/fi";
@@ -96,9 +95,9 @@ export const portfolioImages = [
     {
         id: 4,
         img: work4,
-        name: 'WeatherApp',
+        name: 'Rick and Morty',
         visit: 'https://weather-app-jh1.netlify.app/',
-        github: 'https://github.com/1juanherrera/weatherApp' 
+        github: 'https://rick-and-morty-rho-three.vercel.app/'
     },
     {
         id: 1,
